@@ -27,3 +27,14 @@ error
 minimization
 overfitting
 (optimization learning is related to basedObjective)
+processingCommitments isa relation-type;
+projects isa role-type;
+next-actions isa role-type;
+processingCommitment has-role project;
+processingCommitment has-role next-action;
+next-action isa resource-type;
+projects has-resource next-action
+
+
+projects isa entity-type;
+next-action isa entity-type;
