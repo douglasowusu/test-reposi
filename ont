@@ -1,0 +1,29 @@
+person isa entity-type;
+victoriesPrivate isa entity-tpe;
+effectiveness isa relation-type;
+effectiveness has-role victoryPrivate;
+effectiveness has-role winner;
+person plays-role winner;
+victoriesPrivate plays-role victoryPrivate;
+asset isa entity-type;
+skills isa resource-type;
+education isa resource-type;
+experienceWork isa resource-type;
+interests isa resource-type;
+storyLife isa resource-type;
+theoryOptimization isa entity-type;
+learning isa entity-type;
+probabilitybased, ensemble, knn, objective isa resource-type
+learning has-resource probabilitybased, ensemble, knn, tree, basedObjective, curvebasedlearning;
+approaches isa entity-type;
+dataCategorical isa resource-type;
+dataNumerical isa resource-type;
+#uncategorized
+modelbuilding
+recapDaily
+expenses
+commitment
+error
+minimization
+overfitting
+(optimization learning is related to basedObjective)
